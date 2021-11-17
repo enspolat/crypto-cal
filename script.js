@@ -34,10 +34,14 @@ for (let i = 0; i < portfolio.length; i++) {
     total.innerText = "$" + (cash + Math.round(portfolio[i].month * monthly));
     cost.innerText = "$" + Math.round(100 * (portfolio[i].apr / 12));
     apr.innerText = portfolio[i].apr;
-    document.getElementsByID("slider")[0].style.display = "block";
-    //document.getElementById("MYDIV").style.background = "linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)";
+   
+    document.getElementById("MYDIV").style.animationName = "example";
+     setTimeout(() => {
+      document.getElementById("MYDIV").style.animationName = "null";
+   },2000)
   };
 }
+
 
 const header = document.getElementById("myDIV");
 const btns = header.getElementsByClassName("btn");

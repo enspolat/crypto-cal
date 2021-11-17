@@ -21,10 +21,10 @@ body {
     transform: translateX(1%);
   }
   50% {
-    transform: translateX(99%);
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(1%);
+    transform: translateX(0%);
   }
 }
 
@@ -34,8 +34,7 @@ body {
 
   width: 100%;
   background-color: antiquewhite;
-  animation-name: example;
-  animation-duration: 4s;
+  animation-duration: 2s;
   position: absolute;
 }
 
